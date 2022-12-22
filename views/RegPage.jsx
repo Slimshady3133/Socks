@@ -15,7 +15,7 @@ function LoginPage() {
         <input name="password" id="passwordInput" type="password" required />
 
         <button id="knopka" type="submit">
-          Зарегистрироваться
+          <a href="/create"> Зарегистрироваться</a>
         </button>
       </form>
     </Layout>
