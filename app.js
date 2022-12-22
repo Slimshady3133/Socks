@@ -4,20 +4,20 @@ require('dotenv').config();
 
 const express = require('express');
 const morgan = require('morgan');
-const db = require('./db/models');
 
 const app = express();
 const path = require('path');
 const session = require('express-session');
+const db = require('./db/models');
 
 const errorHandler = require('./middlewaare/errorHandler');
 const ssr = require('./middlewaare/ssr');
 
 const sessionCongig = require('./config/sessions');
 
-const sequelize = require('./db/models');
 const UserRoute = require('./routes/user');
-const authRegRouter = require('./routes/userReg')
+const authRegRouter = require('./routes/userReg');
+const homeRouter = require('./routes/mod');
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(session(sessionCongig));
@@ -28,11 +28,11 @@ app.use(express.json());
 app.use(errorHandler);
 app.use(ssr);
 
-
 const PORT = process.env.PORT ?? 3000;
 
 app.use('/auth', UserRoute);
-app.use('/register', authRegRouter)
+app.use('/register', authRegRouter);
+app.use('/', homeRouter);
 const start = async () => {
   try {
     await db.sequelize.authenticate();
