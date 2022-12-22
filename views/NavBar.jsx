@@ -5,8 +5,8 @@ function NavBar({ user }) {
     <div className="nav-flex">
       <ul className="nav">
         <li className="nav-item">
-          <a className="nav-link active img-logo" aria-current="page" href="/">
-            <img src="public/img/Socks.jpg" alt="Socks" />
+          <a className="nav-link active img-logo" aria-current="page" href="/auth/login">
+            <img src="/img/socks.png" width={50}/>
           </a>
         </li>
       </ul>
@@ -24,7 +24,7 @@ function NavBar({ user }) {
               </a>
             </div>
             <div className="nav-item">
-              <a className="nav-link nav-text" href="/auth/register">
+              <a className="nav-link nav-text" href="/register/login">
                 Зарегистрироваться
               </a>
             </div>
