@@ -17,7 +17,9 @@ const sessionCongig = require('./config/sessions');
 
 const sequelize = require('./db/models');
 const UserRoute = require('./routes/user');
+const authRegRouter = require('./routes/userReg')
 
+app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(session(sessionCongig));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: true }));
@@ -25,12 +27,12 @@ app.use(express.json());
 
 app.use(errorHandler);
 app.use(ssr);
-app.use(express.static(path.resolve(__dirname, 'public')));
+
 
 const PORT = process.env.PORT ?? 3000;
 
 app.use('/auth', UserRoute);
-
+app.use('/register', authRegRouter)
 const start = async () => {
   try {
     await db.sequelize.authenticate();
