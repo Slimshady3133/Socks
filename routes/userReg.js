@@ -20,6 +20,7 @@ authRegRouter.post('/login', async (req, res) => {
     password: await bcrypt.hash(req.body.password, 10),
   });
   req.session.userId = newUser.id;
+  res.redirect('/');
 });
 
 authRegRouter.post('/login', async (req, res) => {
@@ -39,11 +40,9 @@ authRegRouter.post('/login', async (req, res) => {
       res.status(420).json({ message: 'неправильно введен логин или пароль' });
   } catch (error) {
     console.error(error);
-    res
-      .status(500)
-      .json({
-        message: 'Извините, на сервере произошла ошибка, попробйте позже.',
-      });
+    res.status(500).json({
+      message: 'Извините, на сервере произошла ошибка, попробйте позже.',
+    });
   }
 });
 module.exports = authRegRouter;
