@@ -4,9 +4,9 @@ const Layout = require('./Layout');
 function LoginPage() {
   return (
     <Layout>
-      <form method="POST" action="/auth/register">
+      <form method="POST" action="/register/login">
         <label htmlFor="loginInput">Login</label>
-        <input name="login" id="loginInput" type="text" required />
+        <input name="name" id="loginInput" type="text" required />
 
         <label htmlFor="emailInput">Email</label>
         <input name="email" id="emailInput" type="text" required />

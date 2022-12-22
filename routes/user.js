@@ -4,7 +4,7 @@ const ApiError = require('../Error/ApiError');
 const db = require('../db/models');
 
 const LoginPage = require('../views/LoginPage');
-const RegPage = require('../views/RegPage');
+
 //const { useCallback } = require('react');
 
 UserRouter.get('/login', async (req, res) => {
@@ -26,9 +26,7 @@ UserRouter.post('/login', async (req, res) => {
   });
 });
 
-UserRouter.get('/register', async (req, res) => {
-  res.renderComponent(RegPage);
-});
+
 
 UserRouter.get('/logout', async (req, res) => {
   req.session.destroy((error) => {
