@@ -1,32 +1,48 @@
+/* eslint-disable react/prop-types */
 const React = require('react');
-const NavBar = require('./NavBar');
 
-function Layout({ children, user }) {
+module.exports = function Layout({ children }) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <title>Генератор носков</title>
+        <link rel="stylesheet" href="/style/style.css" />
+        <link rel="stylesheet" href="/stylesheets/application.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          href="https://fonts.googleapis.com/css2?family=Syne%20Tactile&display=swap"
           rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossOrigin="anonymous"
         />
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-          crossOrigin="anonymous"
-        />
-        <link rel="stylesheet" type="text/css" href="/style/style.css" />
-      </head>
 
+        <script defer src="/js/application.js" />
+
+        <title>Generator Socks</title>
+      </head>
       <body>
-        <NavBar user={user} />
-        <div className="container">{children}</div>
+        <header
+          role="banner"
+          className="mar-t-5 pad-t-2 pad-b-4 pad-s-1 wrap-float bg-white"
+        >
+          <div className="max-w-700 center wrap-float">
+            <nav className="clearfix mar-b-1">
+              <ul className="no-bullets no-margin no-padding right" />
+            </nav>
+
+            <div className="logo-container">
+              <img
+                className="logo center block"
+                src="/img/socks.png"
+                width={100}
+                alt="logo"
+              />
+            </div>
+          </div>
+        </header>
+        <div className="bg-dk-green pad-t-2 pad-s-1 pad-b-8 mar-b-16 c-white">
+          <div className="max-w-700 center">{children}</div>
+        </div>
       </body>
     </html>
   );
-}
-
-module.exports = Layout;
+};
