@@ -35,7 +35,9 @@ const PORT = process.env.PORT ?? 3000;
 const start = async () => {
   try {
     await db.sequelize.authenticate();
+    // await db.sequelize.drop();
     await db.sequelize.sync();
+    // await db.sequelize.close();
     app.listen(PORT, () => {
       console.log(`*** Server started at ${PORT} port ***`);
     });
