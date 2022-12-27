@@ -1,6 +1,11 @@
-#g {
+/* #g {
   margin-left: 300px;
+} */
+
+.Socks {
+  background-color: red;
 }
+
 header {
   display: flex;
   text-align: center;
@@ -34,12 +39,60 @@ header {
   text-transform: none;
 }
 html {
-  background-image: url(/img/fon2.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(/img/fon2.jpg); */
+  /* background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
+}
+
+.socks-container {
+}
+
+.socks-flex {
+  display: flex;
+}
+
+.head {
+  width: 350px;
+  height: 70px;
+  /* clip-path: circle(50% at 50% 50%); */
+  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
+  /* background-color: red; */
+}
+.sockBody {
+  width: 350px;
+  height: 200px;
+  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
+  /* background-color: red; */
+}
+
+.sockBody2 {
+  width: 350px;
+  height: 220px;
+  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
+  /* background-color: red; */
+}
+.heel {
+  width: 350px;
+  height: 220px;
+  border-radius: 45% 55% 100% 0% / 0% 0% 100% 100%;
+  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
+  /* background-color: red; */
+}
+.toe {
+  width: 100px;
+  height: 220px;
+  border-radius: 30% 0% 0% 30%;
+  /* clip-path: polygon(44% 31%, 0% 100%, 100% 100%); */
+  /* background-color: red; */
+}
+
+#head {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%);
 }
