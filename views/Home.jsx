@@ -14,7 +14,7 @@ function Home() {
         Добро пожаловать на наш сайт по созданию кастомных, уникальных носков
         для каждого.
       </div>
-      <a href="/auth/registr">
+      <a href="/auth/register">
         <button type="submit" className="examplebtn">
           Generator Socks 🧦
         </button>

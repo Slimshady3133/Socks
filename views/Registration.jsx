@@ -15,7 +15,7 @@ function Reg() {
         <input name="password" id="passwordInput" type="password" required />
 
         <button id="knopka" type="submit">
-          Voiti
+          Зарегестрироваться
         </button>
       </form>
     </Layout>
