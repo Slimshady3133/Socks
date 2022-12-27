@@ -8,6 +8,7 @@ routerUser.get('/', (req, res) => {
 });
 
 routerUser.post('/', (req, res) => {
+  console.log(req.body);
   req.session.destroy((error) => {
     if (error) {
       return res.status(500).json({ message: 'Ошибка при удалении сессии' });
@@ -17,4 +18,9 @@ routerUser.post('/', (req, res) => {
     res.redirect('/');
   });
 });
+
+// routerUser.post('/', (req, res) => {
+
+//   res.redirect('/');
+// });
 module.exports = routerUser;
