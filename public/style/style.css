@@ -37,10 +37,12 @@ header {
   font-style: italic;
   font-variant: normal;
   text-transform: none;
+  position: flex;
+  text-align: center;
 }
 html {
-  /* background-image: url(/img/fon2.jpg); */
-  /* background-repeat: no-repeat;
+  /* background-image: url(/img/fon2.jpg);
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -95,4 +97,67 @@ html {
   width: 100px;
   height: 100px;
   clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%);
+}
+.conteiner {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#voiti {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.left {
+  text-align: end;
+}
+.exm {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin: 0 15px 15px 0;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #444;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  transition: box-shadow 0.2s;
+}
+.exm:focus-visible {
+  border: 1px solid #4c51f9;
+  outline: none;
+}
+.exm:hover {
+  transition: all 0.2s;
+  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.exm:active {
+  background-color: #808080;
+}
+.exm:disabled {
+  background-color: #eee;
+  border-color: #eee;
+  color: #444;
+  cursor: not-allowed;
 }
