@@ -1,32 +1,8 @@
-/* #g {
-  margin-left: 300px;
-} */
-
-.socksSVG {
-  fill: red;
-  /* stroke: red; */
-}
-
 header {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: right;
-}
-.examplebtn {
-  font-family: 'Montserrat';
-  font-size: 48px;
-  color: #316bda !important;
-  padding: 23px 50px;
-  border-radius: 22px;
-  border: 6px outset #7db0e5;
-  background: #830c55;
-  background: linear-gradient(to top, #830c55, #010c09);
-}
-.examplebtn:hover {
-  color: #cccccc !important;
-  background: #0b1804;
-  background: linear-gradient(to top, #0b1804, #1491d9);
 }
 .cssFont_1 {
   font-family: 'Syne Tactile', cursive;
@@ -45,97 +21,6 @@ header {
 body {
   background-image: url('/img/background.webp');
   background-size: cover;
-
-  /* background-image: url(/img/fon2.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-}
-
-.socks-container {
-}
-
-.socks-flex {
-  display: flex;
-}
-
-.head {
-  /* position: absolute;
-  z-index: 3; */
-  position: absolute;
-  left: 440px;
-  width: 350px;
-  height: 70px;
-  /* clip-path: circle(50% at 50% 50%); */
-  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
-  /* background-color: red; */
-}
-.sockBody {
-  /* position: absolute;
-  z-index: 2; */
-  /* position: relative;
-  position: fixed; */
-  position: relative;
-  top: 70px;
-  left: 440px;
-  width: 350px;
-  height: 300px;
-  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
-  /* background-color: red; */
-}
-
-.sockBody2 {
-  position: relative;
-  top: 70px;
-  width: 300px;
-  height: 220px;
-  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
-  /* background-color: red; */
-}
-.heel {
-  position: relative;
-  z-index: 1;
-  top: 70px;
-  width: 350px;
-  height: 220px;
-  border-radius: 45% 55% 100% 0% / 0% 0% 100% 100%;
-  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
-  /* background-color: red; */
-}
-
-.smallheel {
-  position: absolute;
-  z-index: 2;
-  top: 70px;
-  top: 655px;
-  left: 440px;
-
-  width: 350px;
-  height: 150px;
-  border-radius: 45% 55% 100% 0% / 0% 0% 100% 100%;
-  /* background-color: #010c09; */
-  /* clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%); */
-  /* background-color: red; */
-}
-
-.toe {
-  position: relative;
-  top: 70px;
-  width: 140px;
-  height: 220px;
-  border-radius: 30% 0% 0% 30%;
-  /* clip-path: polygon(44% 31%, 0% 100%, 100% 100%); */
-  /* background-color: red; */
-}
-
-#head {
-  width: 100px;
-  height: 100px;
-  clip-path: polygon(0 73%, 74% 73%, 73% 100%, 0% 100%);
 }
 .conteiner {
   display: flex;
@@ -157,57 +42,11 @@ body {
   justify-content: center;
   text-align: center;
 }
-.left {
-  text-align: end;
-}
-.exm {
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0 25px;
-  margin: 0 15px 15px 0;
-  outline: none;
-  border: 1px solid #fff;
-  border-radius: 50px;
-  height: 46px;
-  line-height: 46px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #444;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
-  cursor: pointer;
-  user-select: none;
-  appearance: none;
-  touch-action: manipulation;
-  vertical-align: top;
-  transition: box-shadow 0.2s;
-}
-.exm:focus-visible {
-  border: 1px solid #4c51f9;
-  outline: none;
-}
-.exm:hover {
-  transition: all 0.2s;
-  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
-}
-.exm:active {
-  background-color: #808080;
-}
-.exm:disabled {
-  background-color: #eee;
-  border-color: #eee;
-  color: #444;
-  cursor: not-allowed;
-}
 * {
   box-sizing: border-box;
 }
 
 main {
-  /* background: linear-gradient(#ffffff, #09bd30);
-  background-repeat: no-repeat;
-  min-height: 90vh; */
   background-image: url('/img/giphy.gif');
   background-size: cover;
 }
@@ -275,9 +114,6 @@ header {
 .mainItem {
   display: flex;
   width: 50%;
-}
-
-footer {
 }
 
 .conteinerFooter {
@@ -842,4 +678,31 @@ textarea:focus {
   -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
   overflow: hidden;
+}
+.shop-cart-button {
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+.shop-cart-button:hover {
+  color: red;
+}
+.scattering {
+  width: 100px;
+  height: 100px;
+  background: url(http://zornet.ru/ABVUN/Aba/detunis/supasnab/heart.png)
+    no-repeat;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.scattering:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
 }
