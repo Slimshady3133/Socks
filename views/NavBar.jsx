@@ -4,7 +4,7 @@ module.exports = function NavBar({ user }) {
   return (
     <header>
       <div className="conteiner conteinerHeader">
-        <a className="logoImg" href="/home">
+        <a className="logoImg" href="/">
           <img
             className="imgHeader"
             width="100px"
@@ -42,23 +42,25 @@ module.exports = function NavBar({ user }) {
               </li>
               <li className="headerNavItem">
                 <a className="linkAll" href="/auth/logout">
-                  Выйти
+                  <button type="submit" className="exm">
+                    Выйти
+                  </button>
                 </a>
               </li>
             </ul>
           ) : (
-            <ul className="headerNavList">
-              <li className="headerNavItem">
-                <a className="linkAll" href="/auth/register">
+            <div>
+              <a className="linkAll" href="/auth/register">
+                <button type="submit" className="exm">
                   Зарегистрироваться
-                </a>
-              </li>
-              <li className="headerNavItem">
-                <a className="linkAll" href="/auth/login">
+                </button>
+              </a>
+              <a className="linkAll" href="/auth/login">
+                <button type="submit" className="exm">
                   Войти
-                </a>
-              </li>
-            </ul>
+                </button>
+              </a>
+            </div>
           )}
         </nav>
       </div>
