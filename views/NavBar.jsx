@@ -42,7 +42,7 @@ module.exports = function NavBar({ user }) {
               </li>
               <li className="headerNavItem">
                 <a className="linkAll" href="/auth/logout">
-                  <button type="submit" className="exm">
+                  <button type="submit" className="button">
                     Выйти
                   </button>
                 </a>
@@ -51,12 +51,12 @@ module.exports = function NavBar({ user }) {
           ) : (
             <div>
               <a className="linkAll" href="/auth/register">
-                <button type="submit" className="exm">
+                <button type="submit" className="button">
                   Зарегистрироваться
                 </button>
               </a>
               <a className="linkAll" href="/auth/login">
-                <button type="submit" className="exm">
+                <button type="submit" className="button">
                   Войти
                 </button>
               </a>
