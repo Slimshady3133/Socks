@@ -9,8 +9,9 @@
 
 header {
   display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: right;
 }
 .examplebtn {
   font-family: 'Montserrat';
@@ -41,7 +42,10 @@ header {
   position: flex;
   text-align: center;
 }
-html {
+body {
+  background-image: url('/img/background.webp');
+  background-size: cover;
+
   /* background-image: url(/img/fon2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -201,9 +205,11 @@ html {
 }
 
 main {
-  background: linear-gradient(#ffffff, #ffd801);
+  /* background: linear-gradient(#ffffff, #09bd30);
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 90vh; */
+  background-image: url('/img/giphy.gif');
+  background-size: cover;
 }
 
 .linkAll {
@@ -272,8 +278,6 @@ header {
 }
 
 footer {
-  width: 100%;
-  background: #ffd801;
 }
 
 .conteinerFooter {
@@ -288,8 +292,9 @@ footer {
 }
 
 .footerItem {
+  padding: 0 10px;
   display: flex;
-  color: #ffffff;
+  color: #000000;
 }
 .btn,
 .btn-primary {
@@ -560,7 +565,7 @@ h5 {
   left: -30px;
 }
 
-.block {
+.blockIgor {
   -webkit-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
@@ -573,14 +578,66 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  background-image: url('/img/Igor.jpg');
+  background-size: cover;
 }
 
-.homer {
+.blockFarit {
+  -webkit-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  font-size: 12px;
+  border: 2px rgb(83, 143, 207) solid;
+  border-radius: 10px;
+  padding: 10px;
+  width: 142px;
+  height: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-image: url('/img/Farit.jpg');
+  background-size: cover;
+}
+
+.blockPasha {
+  -webkit-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  font-size: 12px;
+  border: 2px rgb(83, 143, 207) solid;
+  border-radius: 10px;
+  padding: 10px;
+  width: 142px;
+  height: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-image: url('/img/Pasha.jpg');
+  background-size: cover;
+}
+
+.blockNastya {
+  -webkit-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
+  font-size: 12px;
+  border: 2px rgb(83, 143, 207) solid;
+  border-radius: 10px;
+  padding: 10px;
+  width: 142px;
+  height: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-image: url('/img/Nastya.jpg');
+  background-size: cover;
+}
+/* .Igor {
   height: 140px;
   position: relative;
   left: -7px;
   display: flex;
-}
+} */
 
 .couagmir {
   height: 130px;

@@ -9,7 +9,7 @@ module.exports = function Layout({ children, user }) {
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="/style/style.css" />
         <link rel="stylesheet" href="/stylesheets/application.css" />
-        <link rel="stylesheet" href="/css/normalize.css" />
+        {/* <link rel="stylesheet" href="/css/normalize.css" /> */}
 
         <script src="/js/application.js" defer />
         <script src="/js/basketbtn.js" defer />
@@ -58,9 +58,9 @@ module.exports = function Layout({ children, user }) {
           <div className="conteiner conteinerFooter">
             <ul className="footerList">
               <li className="footerItem">
-                г. Санкт-Петербург, ул. Кирочная, д.19
+                г. Санкт-Петербург, ул. Высотная, д.1
               </li>
-              <li className="footerItem">storesocks@help.ru</li>
+              <li className="footerItem"> faritahmetshin@gmail.com</li>
             </ul>
           </div>
         </footer>
