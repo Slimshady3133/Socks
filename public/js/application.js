@@ -11,12 +11,14 @@ const head = document.querySelector('.head');
 const sockBody = document.querySelector('.sockBody');
 const sockBody2 = document.querySelector('.sockBody2');
 const heel = document.querySelector('.heel');
+const smallheel = document.querySelector('.smallheel ');
 const toe = document.querySelector('.toe');
 
 head.style.backgroundColor = colorPickerHead.value;
 sockBody.style.backgroundColor = colorPickerBody.value;
 sockBody2.style.backgroundColor = colorPickerBody.value;
 heel.style.backgroundColor = colorPickerHeel.value;
+smallheel.style.backgroundColor = colorPickerBody.value;
 toe.style.backgroundColor = colorPickerToe.value;
 
 colorPickerHead.addEventListener(
@@ -31,6 +33,7 @@ colorPickerBody.addEventListener(
   (event) => {
     sockBody.style.backgroundColor = event.target.value;
     sockBody2.style.backgroundColor = event.target.value;
+    smallheel.style.backgroundColor = event.target.value;
   },
   false,
 );

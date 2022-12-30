@@ -55,6 +55,7 @@ function CreateSocks() {
         <div className="socks-flex">
           <div className="toe">Носок</div>
           <div className="sockBody2">Тело</div>
+          <div className="smallheel">Пятка Маленькая</div>
           <div className="heel">Пятка</div>
         </div>
       </div>
@@ -65,9 +66,8 @@ function CreateSocks() {
           data-jscolor="{ format: 'rgba', required: false, palette: '#C00 #0C0 #00C', previewPosition: 'right' }"
         />
       </span>
-
-      <div className="Socks">
-        <img src="/img/Untitled-2.svg" alt="socks" />
+      <div>
+        <img className="socksSVG" src="/img/Untitled-_1_.svg" alt="socks" />
       </div>
 
       {/* <div className="head"></div> */}
