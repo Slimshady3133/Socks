@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 const React = require('react');
 const Layout = require('./Layout');
 
@@ -7,16 +8,33 @@ function Reg() {
       <div className="container">
         <form method="POST" action="/auth/register" className="register">
           <label htmlFor="loginInput">Login</label>
-          <input name="name" id="loginInput" type="text" required />
+          <input
+            name="name"
+            className="name"
+            id="loginInput"
+            type="text"
+            required
+          />
 
           <label htmlFor="emailInput">Email</label>
-          <input name="email" id="emailInput" type="email" required />
+          <input
+            name="email"
+            className="email"
+            id="emailInput"
+            type="email"
+            required
+          />
 
           <label htmlFor="passwordInput">Password</label>
-          <input name="password" id="passwordInput" type="password" required />
-
-          <button id="knopka" type="submit">
-            Зарегестрироваться
+          <input
+            name="password"
+            className="password"
+            id="passwordInput"
+            type="password"
+            required
+          />
+          <button className="button" type="submit">
+            Зарегистрироваться
           </button>
         </form>
         <a href="/auth/login">
