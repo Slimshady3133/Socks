@@ -1,13 +1,29 @@
 /* eslint-disable react/prop-types */
 const React = require('react');
+const NavBar = require('./NavBar');
 
-module.exports = function Layout({ children }) {
+module.exports = function Layout({ children, user }) {
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="/style/style.css" />
         <link rel="stylesheet" href="/stylesheets/application.css" />
+        <link rel="stylesheet" href="/css/normalize.css" />
+
+        <script src="/js/application.js" defer />
+        <script src="/js/basketbtn.js" defer />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossOrigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -36,45 +52,18 @@ module.exports = function Layout({ children }) {
         <title>Generator Socks</title>
       </head>
       <body>
-        <header
-          role="banner"
-          className="mar-t-5 pad-t-2 pad-b-4 pad-s-1 wrap-float bg-white"
-        >
-          <div className="max-w-700 center wrap-float">
-            {/* <nav className="clearfix mar-b-1">
-              <ul className="no-bullets no-margin no-padding right" />
-            </nav> */}
-
-            {/* <nav class="navbar navbar-light bg-light">
-              <div class="container">
-                <a class="navbar-brand" href="/">
-                  <img
-                    src="/img/socks.png"
-                    alt=""
-                    width="45"
-                    height="34"
-                    alt="logo"
-                  />
-                </a>
-              </div>
-            </nav> */}
-
-            <div className="logo-container">
-              <a href="/">
-                {' '}
-                <img
-                  className="logo center block"
-                  src="/img/socks.png"
-                  width={100}
-                  alt="logo"
-                />
-              </a>
-            </div>
+        <NavBar user={user} />
+        <main>{children}</main>
+        <footer>
+          <div className="conteiner conteinerFooter">
+            <ul className="footerList">
+              <li className="footerItem">
+                г. Санкт-Петербург, ул. Кирочная, д.19
+              </li>
+              <li className="footerItem">storesocks@help.ru</li>
+            </ul>
           </div>
-        </header>
-        <div className="bg-dk-green pad-t-2 pad-s-1 pad-b-8 mar-b-16 c-white">
-          <div className="max-w-700 center">{children}</div>
-        </div>
+        </footer>
       </body>
     </html>
   );
