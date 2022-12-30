@@ -1,4 +1,5 @@
 const React = require('react');
+const { FaGift } = require('react-icons/fa');
 
 module.exports = function NavBar({ user }) {
   return (
@@ -22,22 +23,24 @@ module.exports = function NavBar({ user }) {
               </li>
               <li className="headerNavItem">
                 <a href="/render/Like">
-                  <img
+                  {/* <img
                     className="imgBascket"
                     width="30px"
                     src="/img/like.png"
                     alt=""
-                  />
+                  /> */}
+                  <div className="scattering" />
                 </a>
               </li>
               <li className="headerNavItem">
                 <a href="/render/basket">
-                  <img
+                  {/* <img
                     className="imgBascket"
                     width="30px"
                     src="/img/корзина.png"
                     alt=""
-                  />
+                  /> */}
+                  <FaGift className="shop-cart-button" />
                 </a>
               </li>
               <li className="headerNavItem">

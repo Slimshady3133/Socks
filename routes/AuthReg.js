@@ -69,7 +69,7 @@ routerAuthReg.post('/login', async (req, res) => {
 
       req.session.userId = user; // это сессия
       // res.json({ status: 'ok' }); посмотрим статус
-      res.redirect('/home');
+      res.redirect('/');
       // res.write('<script>window.location.href = "/"</script>');
       // res.end();
     }
