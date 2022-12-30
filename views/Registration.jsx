@@ -10,7 +10,7 @@ function Reg() {
           <input name="name" id="loginInput" type="text" required />
 
           <label htmlFor="emailInput">Email</label>
-          <input name="email" id="emailInput" type="text" required />
+          <input name="email" id="emailInput" type="email" required />
 
           <label htmlFor="passwordInput">Password</label>
           <input name="password" id="passwordInput" type="password" required />
