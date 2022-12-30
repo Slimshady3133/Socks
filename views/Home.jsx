@@ -16,6 +16,11 @@ module.exports = function Home({ userId }) {
                 носков, добавь картинку команды в которую хочешь попасть и
                 выбери цвет!
               </p>
+              <a href="/home">
+                <button className="button" type="submit">
+                  Lets GO! Create Socks
+                </button>
+              </a>
               <div className="headerText">
                 <br />
                 Наша команда:
