@@ -20,26 +20,44 @@ homeRouts.get('/', async (req, res) => {
   const pictures = [];
   const colors = await Color.findAll({ raw: true });
 
-  const garfield = await Picture.findOne({
+  const giftBox = await Picture.findOne({
     raw: true,
     where: {
-      name: 'Гарфилд',
+      name: 'Подарок',
     },
   });
 
-  const homer = await Picture.findOne({
+  const hat = await Picture.findOne({
     raw: true,
     where: {
-      name: 'Гoмер',
+      name: 'Шапка',
     },
   });
-  const patrick = await Picture.findOne({
+  const tree = await Picture.findOne({
     raw: true,
     where: {
-      name: 'Патрик',
+      name: 'Елка',
     },
   });
-  pictures.push(garfield, homer, patrick);
+  const christmasWreath = await Picture.findOne({
+    raw: true,
+    where: {
+      name: 'Венок',
+    },
+  });
+  const ChristmasLolipops = await Picture.findOne({
+    raw: true,
+    where: {
+      name: 'Леденец',
+    },
+  });
+  const Socks = await Picture.findOne({
+    raw: true,
+    where: {
+      name: 'Носок',
+    },
+  });
+  pictures.push(giftBox, hat, tree, christmasWreath, ChristmasLolipops, Socks);
   res.renderComponent(Constructor, { colors, pictures, user });
 });
 

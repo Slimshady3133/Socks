@@ -10,7 +10,7 @@ module.exports = function Constructor({ colors, pictures, user }) {
             picid="1"
             className="change-sock"
             width="300px"
-            src="/img/носки/гарфилд/Frame 1.png"
+            src="/img/носки/Носокк.png"
             alt=""
           />
         </div>
