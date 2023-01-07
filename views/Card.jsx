@@ -15,9 +15,6 @@ module.exports = function Card({ el }) {
       <div className="image">
         <img width="70px" src={el['Pictures.sock_url']} alt="" />
       </div>
-      <div className="description">
-        <span>White</span>
-      </div>
       <div inputid={el.id} className="quantity">
         <button className="plusBtn" type="submit" name="button">
           +
@@ -27,7 +24,7 @@ module.exports = function Card({ el }) {
           -
         </button>
       </div>
-      <div className="totalPrice">549</div>
+      <div className="totalPrice">100</div>
     </div>
   );
 };

@@ -29,11 +29,6 @@ module.exports = function Constructor({ colors, pictures, user }) {
                 </a>
               </li>
             ))}
-
-            {/* <li className="btnColor"><a className="btnLink btnLink1" href=""></a></li>
-            <li className="btnColor"><a className="btnLink btnLink2" href=""></a></li>
-            <li className="btnColor"><a className="btnLink btnLink3" href=""></a></li>
-            <li className="btnColor"><a className="btnLink btnLink4" href=""></a></li> */}
           </ul>
           <h5>Выбери изображение:</h5>
           <ul className="pictureList">

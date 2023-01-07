@@ -23,23 +23,13 @@ module.exports = function NavBar({ user }) {
               </li>
               <li className="headerNavItem">
                 <a href="/render/Like">
-                  {/* <img
-                    className="imgBascket"
-                    width="30px"
-                    src="/img/like.png"
-                    alt=""
-                  /> */}
+          
                   <div className="scattering" />
                 </a>
               </li>
               <li className="headerNavItem">
                 <a href="/render/basket">
-                  {/* <img
-                    className="imgBascket"
-                    width="30px"
-                    src="/img/корзина.png"
-                    alt=""
-                  /> */}
+                  
                   <FaGift className="shop-cart-button" />
                 </a>
               </li>

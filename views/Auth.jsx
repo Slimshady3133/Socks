@@ -6,9 +6,6 @@ function Auth() {
     <Layout>
       <div className="container">
         <form method="POST" action="/auth/login" className="register">
-          {/* <label htmlFor="loginInput">Login</label>
-          <input name="name" id="loginInput" type="text" required /> */}
-
           <label htmlFor="emailInput">Email</label>
           <input
             name="email"

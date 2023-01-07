@@ -1,7 +1,6 @@
 document.querySelector('.btnDiv').addEventListener('click', async (event) => {
   event.preventDefault();
   if (event.target.classList.contains('btnBasket')) {
-    // console.log('THERE')
     const idPicture = event.target
       .closest('.conteinerConstructor')
       .querySelector('.change-sock')
@@ -23,7 +22,6 @@ document.querySelector('.btnDiv').addEventListener('click', async (event) => {
       .closest('.conteinerConstructor')
       .querySelector('.change-sock')
       .getAttribute('picid');
-    // console.log(idPicture)
     const res = await fetch(`/home/picture/${idPicture}`, {
       method: 'POST',
       headers: {

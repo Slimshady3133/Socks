@@ -7,7 +7,7 @@ function Basket({ socks, user }) {
   return (
     <Layout user={user}>
       <div className="shoppingCart">
-        <div className="title">Shopping Bag</div>
+        <div className="title">Корзина</div>
         {socks.map((el) => (
           <Card el={el} />
         ))}

@@ -23,7 +23,7 @@ module.exports = function LikesCard({ el }) {
           -
         </button>
       </div>
-      <div className="totalPrice">549</div>
+      {/* <div className="totalPrice">549</div> */}
     </div>
   );
 };

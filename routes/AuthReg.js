@@ -29,7 +29,6 @@ routerAuthReg.post('/register', async (req, res) => {
     }
     const hashPassword = await bcrypt.hash(password, 5);
     const user = await db.User.create({ name, email, password: hashPassword });
-    // req.session.userId = user.id;
     res.redirect('/');
     return;
   } catch (error) {
@@ -43,15 +42,14 @@ routerAuthReg.get('/login', (req, res) => {
 
 routerAuthReg.post('/login', async (req, res) => {
   try {
-    // то, что поподает в <form> является req.boby
-    const { email } = req.body; // возьмет email от input
-    const { password } = req.body; // возьмет password от input
+    
+    const { email } = req.body; 
+    const { password } = req.body;
 
     const user = await db.User.findOne({
       raw: true,
       where: { email },
-    }); // объявлю юзера который будет искаться в БД
-    // console.log(user);
+    }); 
 
     if (!user) {
       res.status(404);
@@ -61,65 +59,20 @@ routerAuthReg.post('/login', async (req, res) => {
     }
 
     const isSame = await bcrypt.compare(password, user.password);
-    // res.json(isSame); // проверим тру или фалсе
+    
 
     if (email === user.email && isSame) {
-      // req.session - объект. В случает совпадения почты и пароля создается сессия
-      // req.session присваеваем ключ userID, значением которого будет id текучего юзера
+      
 
-      req.session.userId = user; // это сессия
-      // res.json({ status: 'ok' }); посмотрим статус
+      req.session.userId = user; 
       res.redirect('/');
-      // res.write('<script>window.location.href = "/"</script>');
-      // res.end();
     }
   } catch (error) {
-    // console.log(error);
     res
-      .status(500) // покажет статус в случае ошибки на стороне БД
+      .status(500) 
       .json({ messege: error.messege });
   }
 });
-// routerAuthReg.post('/login', async (req, res) => {
-//   const hasLogin = Boolean(req.body.name);
-//   const hasPassword = Boolean(req.body.password);
-
-//   if (!hasLogin || !hasPassword) {
-//     res.status(400).json({ error: 'Введите логин или пароль' });
-//     return;
-//   }
-//   let user;
-//   try {
-//     user = await db.User.findOne({
-//       where: {
-//         name: req.body.name,
-//         email: req.body.email,
-//       },
-//     });
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//     return;
-//   }
-
-//   if (!user) {
-//     res
-//       .status(400)
-//       .json({ error: 'Нет пользователя с таким логином или паролем' });
-//     return;
-//   }
-//   const rawPassword = req.body.password;
-//   const hashedPassword = user.password;
-//   const isSame = await bcrypt.compare(rawPassword, hashedPassword);
-//   if (!isSame) {
-//     res
-//       .status(400)
-//       .json({ error: 'Нет пользователя с таким логином или паролем' });
-//     return;
-//   }
-//   req.session.userId = user.id;
-//   res.redirect('/home');
-// });
-
 routerAuthReg.get('/logout', (req, res) => {
   req.session.destroy((error) => {
     if (error) {
