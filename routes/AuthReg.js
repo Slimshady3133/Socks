@@ -29,7 +29,7 @@ routerAuthReg.post('/register', async (req, res) => {
     }
     const hashPassword = await bcrypt.hash(password, 5);
     const user = await db.User.create({ name, email, password: hashPassword });
-    req.session.userId = user.id;
+    // req.session.userId = user.id;
     res.redirect('/');
     return;
   } catch (error) {
