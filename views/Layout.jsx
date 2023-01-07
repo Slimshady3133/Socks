@@ -9,7 +9,7 @@ module.exports = function Layout({ children, user }) {
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="/style/style.css" />
         <link rel="stylesheet" href="/stylesheets/application.css" />
-        {/* <link rel="stylesheet" href="/css/normalize.css" /> */}
+        
 
         <script src="/js/application.js" defer />
         <script src="/js/basketbtn.js" defer />

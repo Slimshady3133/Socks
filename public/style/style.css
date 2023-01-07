@@ -4,20 +4,7 @@ header {
   text-align: center;
   justify-content: right;
 }
-.cssFont_1 {
-  font-family: 'Syne Tactile', cursive;
-  font-size: 30px;
-  letter-spacing: 0px;
-  word-spacing: 7px;
-  color: #3d96f5;
-  font-weight: bold;
-  text-decoration: underline;
-  font-style: italic;
-  font-variant: normal;
-  text-transform: none;
-  position: flex;
-  text-align: center;
-}
+
 body {
   background-image: url('/img/background.webp');
   background-size: cover;
@@ -71,8 +58,6 @@ ul {
 
 header {
   width: 100%;
-  /* margin: auto auto; */
-  /* box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1); */
 }
 
 .conteinerHeader {
@@ -95,14 +80,6 @@ header {
 .headerNavItem {
   margin-left: 3%;
 }
-
-/* .backetImg {
-  background-image: url('/img/корзина.png');
-  background-repeat: no-repeat;
-  background-position-x: center;
-  width: 100%;
-  height: 100%;
-} */
 
 .conteinerMain {
   display: flex;
@@ -333,26 +310,10 @@ input:focus {
   display: flex;
   margin-right: 20px;
   padding: 10px 10px;
-  width: 20px;
+  width: 50px;
   height: 20px;
-  border-radius: 40px;
+  border-radius: 20%;
   border: 1px solid rgb(0, 0, 0);
-}
-
-.btnLink1 {
-  background: #000000;
-}
-
-.btnLink2 {
-  background: #ffffff;
-}
-
-.btnLink3 {
-  background: #f7fc0e;
-}
-
-.btnLink4 {
-  background: #e21244;
 }
 
 .pictureList {
@@ -406,8 +367,8 @@ h5 {
   -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   font-size: 12px;
-  border: 2px rgb(83, 143, 207) solid;
-  border-radius: 10px;
+  border: 1px rgb(83, 143, 207) solid;
+  border-radius: 50%;
   padding: 10px;
   width: 142px;
   height: 142px;
@@ -423,8 +384,8 @@ h5 {
   -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   font-size: 12px;
-  border: 2px rgb(83, 143, 207) solid;
-  border-radius: 10px;
+  border: 1px rgb(83, 143, 207) solid;
+  border-radius: 50%;
   padding: 10px;
   width: 142px;
   height: 142px;
@@ -440,8 +401,8 @@ h5 {
   -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   font-size: 12px;
-  border: 2px rgb(83, 143, 207) solid;
-  border-radius: 10px;
+  border: 1px rgb(83, 143, 207) solid;
+  border-radius: 50%;
   padding: 10px;
   width: 142px;
   height: 142px;
@@ -457,8 +418,8 @@ h5 {
   -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
   font-size: 12px;
-  border: 2px rgb(83, 143, 207) solid;
-  border-radius: 10px;
+  border: 1px rgb(83, 143, 207) solid;
+  border-radius: 50%;
   padding: 10px;
   width: 142px;
   height: 142px;
@@ -467,35 +428,6 @@ h5 {
   align-content: center;
   background-image: url('/img/Nastya.jpg');
   background-size: cover;
-}
-/* .Igor {
-  height: 140px;
-  position: relative;
-  left: -7px;
-  display: flex;
-} */
-
-.couagmir {
-  height: 130px;
-  position: relative;
-  left: -4px;
-  bottom: -5px;
-  display: flex;
-}
-
-.bender {
-  height: 130px;
-  position: relative;
-  left: -7px;
-  bottom: -4px;
-  display: flex;
-}
-
-.carousel-inner {
-  border-radius: 13px;
-  -webkit-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
-  -moz-box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
-  box-shadow: 20px 20px 15px 0px rgba(87, 105, 118, 0.5);
 }
 
 .btnDiv {

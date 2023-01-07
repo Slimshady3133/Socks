@@ -14,7 +14,6 @@ const AuthReg = require('./routes/AuthReg');
 const Main = require('./routes/Main');
 const BasketRouter = require('./routes/Basket');
 
-const errorHandler = require('./middlewaare/errorHandler');
 const ssr = require('./middlewaare/ssr');
 
 const sessionCongig = require('./config/sessions');
@@ -26,7 +25,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session(sessionCongig));
 
-app.use(errorHandler);
 app.use('/', Main);
 app.use('/render', BasketRouter);
 app.use('/home', Home);
@@ -37,9 +35,6 @@ const PORT = process.env.PORT ?? 3000;
 const start = async () => {
   try {
     await db.sequelize.authenticate();
-    // await db.sequelize.drop();
-    // await db.sequelize.sync();
-    // await db.sequelize.close();
     app.listen(PORT, () => {
       console.log(`*** Server started at ${PORT} port ***`);
     });
