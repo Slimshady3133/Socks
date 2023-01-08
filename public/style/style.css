@@ -39,7 +39,7 @@ main {
 }
 
 .linkAll {
-  color: #ffd801;
+  color: #5e0d0c;
   text-decoration: none;
 }
 
@@ -125,9 +125,33 @@ header {
   width: 750px;
   height: 100%;
   margin: auto auto;
-  background: #ffffff;
-  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100px;
+  padding: 22px 33px;
+  font-family: 'Lobster', cursive;
+  font-size: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+  background: #5e0d0c;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #4c0300;
+  box-shadow: inset 1px 1px 0px rgba(228, 217, 3, 0.25),
+    /* highlight */ inset 0 0 6px #a23227,
+    /* inner glow */ inset 0 80px 80px -40px #ac3223,
+    /* gradient */ 1px 1px 3px rgba(0, 0, 0, 0.75); /* shadow */
+
+  position: relative;
+  overflow: visible; /* IE9 & 10 */
+  -webkit-transition: 500ms linear;
+  -moz-transition: 500ms linear;
+  -o-transition: 500ms linear;
+  transition: 500ms linear;
   display: flex;
   flex-direction: column;
 }
@@ -246,8 +270,9 @@ input:focus {
   width: 83px;
   text-align: center;
   font-size: 16px;
-  color: #43484d;
+  color: #ffd801;
   font-weight: 300;
+  margin-left: -25px;
 }
 
 @media (max-width: 800px) {
@@ -619,6 +644,7 @@ textarea:focus {
   color: red;
 }
 .scattering {
+  
   width: 100px;
   height: 100px;
   background: url(http://zornet.ru/ABVUN/Aba/detunis/supasnab/heart.png)
@@ -637,4 +663,13 @@ textarea:focus {
   100% {
     background-position: -2800px 0;
   }
+}
+.comeback {
+display: flex;
+justify-content: center;
+text-decoration: none;
+margin-bottom: 20px;
+}
+.inputC{
+  background-color: #5e0d0c;
 }

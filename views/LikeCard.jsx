@@ -14,16 +14,6 @@ module.exports = function LikesCard({ el }) {
       <div className="image">
         <img width="70px" src={el['Picture.sock_url']} alt="" />
       </div>
-      <div inputid={el.id} className="quantity">
-        <button className="plusBtn" type="submit" name="button">
-          +
-        </button>
-        <input className="inputC" type="text" name="nameInput" value="1" />
-        <button className="minusBtn" type="submit" name="button">
-          -
-        </button>
-      </div>
-      {/* <div className="totalPrice">549</div> */}
     </div>
   );
 };
