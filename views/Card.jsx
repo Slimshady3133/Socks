@@ -19,12 +19,14 @@ module.exports = function Card({ el }) {
         <button className="plusBtn" type="submit" name="button">
           +
         </button>
+        
         <input className="inputC" type="text" name="nameInput" value="1" />
         <button className="minusBtn" type="submit" name="button">
           -
         </button>
       </div>
       <div className="totalPrice">100</div>
+      
     </div>
   );
 };

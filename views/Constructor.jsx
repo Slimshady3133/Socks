@@ -10,7 +10,7 @@ module.exports = function Constructor({ colors, pictures, user }) {
             picid="1"
             className="change-sock"
             width="300px"
-            src="/img/носки/Носокк.png"
+            src="/img/ded moroz.png"
             alt=""
           />
         </div>
@@ -47,10 +47,10 @@ module.exports = function Constructor({ colors, pictures, user }) {
             ))}
           </ul>
           <div className="btnDiv">
-            <button className="btnBasket" type="submit">
+            <button className="btnBasket button" type="submit">
               Добавить в корзину
             </button>
-            <button className="btnFavorites" type="submit">
+            <button className="btnFavorites button" type="submit">
               Добавить в избранное
             </button>
           </div>
