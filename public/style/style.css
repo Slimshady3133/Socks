@@ -7,6 +7,7 @@ header {
 
 body {
   background-image: url('/img/background.webp');
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .conteiner {
@@ -644,7 +645,6 @@ textarea:focus {
   color: red;
 }
 .scattering {
-  
   width: 100px;
   height: 100px;
   background: url(http://zornet.ru/ABVUN/Aba/detunis/supasnab/heart.png)
@@ -665,11 +665,11 @@ textarea:focus {
   }
 }
 .comeback {
-display: flex;
-justify-content: center;
-text-decoration: none;
-margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
-.inputC{
+.inputC {
   background-color: #5e0d0c;
 }
